@@ -51,7 +51,7 @@ function Reports() {
         localStorage.getItem("token");
 
       const res = await axios.get(
-        "https://smart-finance-manager-3bgu.onrender.com/api/transactions",
+        "https://smart-finance-manager-1-backend.onrender.com/api/transactions",
         {
           headers: {
             Authorization: `Bearer ${token}`

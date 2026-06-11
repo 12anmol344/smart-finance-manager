@@ -23,7 +23,7 @@ function Register() {
 
     try {
       await axios.post(
-        "https://smart-finance-manager-3bgu.onrender.com/api/users/register",
+        "https://smart-finance-manager-1-backend.onrender.com/api/users/register",
         {
           name,
           email,

@@ -27,7 +27,7 @@ function Transaction() {
       const token = localStorage.getItem("token");
 
       await axios.post(
-        "https://smart-finance-manager-3bgu.onrender.com/api/transactions",
+        "https://smart-finance-manager-1-backend.onrender.com/api/transactions",
         {
           type,
           amount,

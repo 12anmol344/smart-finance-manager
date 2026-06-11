@@ -18,7 +18,7 @@ function Login() {
 
     try {
       const res = await axios.post(
-        "https://smart-finance-manager-3bgu.onrender.com/api/users/login",
+        "https://smart-finance-manager-1-backend.onrender.com/api/users/login",
         { email, password }
       );
 

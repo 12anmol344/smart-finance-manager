@@ -131,16 +131,15 @@ function Dashboard() {
             "token"
           );
 
-        const res =
-          await axios.get(
-            "https://smart-finance-manager-3bgu.onrender.com/api/transactions",
-            {
-              headers: {
-                Authorization:
-                  `Bearer ${token}`
-              }
-            }
-          );
+        
+        const res = await axios.get(
+  "https://smart-finance-manager-1-backend.onrender.com/api/transactions",
+  {
+    headers: {
+      Authorization: `Bearer ${token}`
+    }
+  }
+);
 
         setTransactions(
           res.data
@@ -194,14 +193,13 @@ function Dashboard() {
           );
 
         await axios.delete(
-          `http://localhost:5000/api/transactions/${id}`,
-          {
-            headers: {
-              Authorization:
-                `Bearer ${token}`
-            }
-          }
-        );
+  `https://smart-finance-manager-1-backend.onrender.com/api/transactions/${id}`,
+  {
+    headers: {
+      Authorization: `Bearer ${token}`
+    }
+  }
+);
 
         fetchTransactions();
 
@@ -239,7 +237,7 @@ function Dashboard() {
           );
 
         await axios.put(
-          `http://localhost:5000/api/transactions/${item._id}`,
+          `https://smart-finance-manager-1-backend.onrender.com/api/transactions/${item._id}`,
 
           {
             ...item,
